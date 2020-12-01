@@ -272,24 +272,52 @@ body {
 /* Fourth section */
 
 .fourth_section {
-	padding: 18%;
+	position: relative;
     background-image: url(../images/yellow-background-2.png);
-    padding-top: 8%;
-    padding-bottom: 0;
+    padding-top: 11%;
+    padding-bottom: 10%;
     background-repeat: no-repeat;
     z-index: 10;
 }
 
-
-.creator_section_heading {
-	display: flex;
-	padding: 0 10%;
-	margin-top: 5%;
+.fourth_section img {
+	position: absolute;
+	right: 7%;
+	top: 18%;
+	width: 400px;
 }
 
-.creator_section_heading h1 {
+.creator_kris {
+	background-image: url(../images/underline-creator.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 23%;
+	padding-bottom: 8px;
+}
+
+.creator_andrea {
+	background-image: url(../images/underline-creator-andrea.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 23%;
+	padding-bottom: 8px;
+}
+
+.fourth_section_main_heading {
 	font-size: 5.5em;
-	margin-right: 5%;
+	margin-left: 30px;
+	position: relative;
+}
+
+.fourth_section_main_heading:after {
+	content: '';
+    background-image: url(../images/underline-creators.png);
+    width: 524px;
+    height: 84px;
+    position: absolute;
+    top: 1px;
+    left: 172px;
+    z-index: -1;
 }
 
 .creator_section_body {
@@ -298,8 +326,12 @@ body {
 	padding: 0 4%;
 }
 
+.creator_body_right {
+	margin-top: 60px;
+}
+
 .paragraf_text {
-	width: 100%;
+	width: 60%;
 }
 
 .creator_section_body h2 {
@@ -308,6 +340,10 @@ body {
 
 .creator_section_body p {
 	font-size: 2.2em;
+}
+
+.creator_body_left p {
+	margin-left: auto;
 }
 
 .creator_first_child {
@@ -326,19 +362,13 @@ body {
 }
 
 .creator_body_left_paragraf {
-	/* padding-left: 290px;
-	margin-top: -120px; */
 	text-align: right;
-	margin-right: 10%;
+	margin-right: 6%;
 }
 
 .creator_body_right_paragraf {
 	text-align: left;
-	margin-left: 10%;
-}
-
-.creator_body_right_paragraf .paragraf_text {
-	margin-left: auto;
+	margin-left: 6%;
 }
 
 .creator_body_right_image {
@@ -427,8 +457,13 @@ body {
 
 	/* Fourth section */
 
-	.creator_section_image img {
+	.fourth_section img {
 		width: 350px;
+		top: 20%;
+	}
+
+	.creator_kris {
+		width: 27%;
 	}
 }
 
@@ -439,7 +474,7 @@ body {
 		width: 60%;
 	}
 
-	.main_heading h1, .vision_heading h1, .heading_service_section h1, .creator_section_heading h1 {
+	.main_heading h1, .vision_heading h1, .heading_service_section h1, .creator_section_heading h1, .fourth_section_main_heading {
 		font-size: 4.5em;
 	}
 
@@ -466,8 +501,12 @@ body {
 
 	/* Fourth section */
 
-	.paragraf_text {
-		width: 90%;
+	.fourth_section img {
+		width: 290px;
+	}
+
+	.fourth_section_main_heading:after {
+		width: 385px;
 	}
 }
 
@@ -500,6 +539,11 @@ body {
 
 	/* Fourth section */
 
+	.fourth_section {
+		padding-top: 19%;
+		padding-bottom: 22%;
+	}
+
 	.creator_section_body p {
 		font-size: 1.5em;
 	}
@@ -508,12 +552,8 @@ body {
 		font-size: 2.5em;
 	}
 
-	.kris_image, .andrea_image {
-		width: 170px;
-	}
-
-	.creator_body_left_paragraf {
-		padding-left: 210px;
+	.creator_andrea {
+		width: 36%;
 	}
 
 	/* Fifth section */
@@ -626,11 +666,27 @@ body {
 
 	/* Third section */
 
-	.heading_service_section h1, .creator_section_heading h1 {
+	.heading_service_section h1, .creator_section_heading h1, .fourth_section_main_heading {
 		font-size: 3.5em;
 	}
 
 	.heading_service_section img {
 		width: 400px;
+	}
+
+	/* Fourth section */
+
+	.fourth_section_main_heading:after {
+		width: 340px;
+		height: 59px;
+		left: 110px;
+	}
+}
+
+@media (max-width: 1100px) {
+	/* Fourth section */
+
+	.fourth_section img {
+		width: 240px;
 	}
 }
